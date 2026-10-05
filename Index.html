@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Service | Instalación de televisores y armado de muebles</title>
+<meta name="description" content="Home Service: instalación de televisores, armado de muebles, cortinas, lámparas, cuadros y espejos. Trabajo seguro, cumplido y de calidad. Cotiza por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#062F66;
+  --navy-2:#0A3F85;
+  --navy-dark:#041D40;
+  --yellow:#FFB000;
+  --yellow-soft:#FFF3D1;
+  --ink:#1B2433;
+  --muted:#5B677A;
+  --line:#E4E9F2;
+  --bg:#F6F8FC;
+  --white:#fff;
+  --wa:#25D366;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(6,47,102,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin-inline:auto}
+section{padding:84px 0}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy-2);background:var(--yellow-soft);padding:6px 14px;border-radius:99px;margin-bottom:14px}
+h1,h2,h3{line-height:1.15;color:var(--navy)}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;margin-bottom:12px}
+.lead{color:var(--muted);font-size:1.05rem;max-width:620px}
+.section-head{margin-bottom:46px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:1rem;padding:14px 26px;border-radius:99px;border:2px solid transparent;cursor:pointer;transition:.2s;font-family:inherit}
+.btn-yellow{background:var(--yellow);color:var(--navy-dark);box-shadow:0 8px 20px rgba(255,176,0,.35)}
+.btn-yellow:hover{transform:translateY(-2px);background:#ffbc1f}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 20px rgba(37,211,102,.3)}
+.btn-wa:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Top bar + header */
+.topbar{background:var(--navy-dark);color:#cfd9ec;font-size:.84rem}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;flex-wrap:wrap}
+.topbar a:hover{color:var(--yellow)}
+.topbar .socials{display:flex;gap:6px;align-items:center}
+.topbar .socials span{margin-right:6px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:54px;height:54px}
+.brand b{display:block;font-size:1.35rem;font-weight:800;color:var(--navy);line-height:1}
+.brand b i{font-style:normal;color:var(--yellow)}
+.brand small{display:block;font-size:.62rem;letter-spacing:.2em;font-weight:600;color:var(--muted);margin-top:4px}
+.menu{display:flex;gap:28px;font-weight:500;font-size:.95rem}
+.menu a{color:var(--navy);position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:3px;background:var(--yellow);border-radius:2px;transition:.25s}
+.menu a:hover::after{width:100%}
+.nav .btn{padding:10px 20px;font-size:.92rem}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 55%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden;padding:86px 0 120px}
+.hero::before{content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,176,0,.28),transparent 68%)}
+.hero::after{content:"";position:absolute;left:-100px;bottom:-180px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 70%)}
+.hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}
+.hero .eyebrow{background:rgba(255,176,0,.18);color:var(--yellow)}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero .script{font-family:'Caveat',cursive;font-size:1.9rem;color:var(--yellow);margin-bottom:10px;display:block}
+.hero p.lead{color:#cfd9ec;margin-bottom:30px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.hero .checks{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem;color:#e6edf9}
+.hero .checks span{display:flex;align-items:center;gap:8px}
+.hero .checks svg{width:20px;height:20px;color:var(--yellow)}
+.hero-card{background:#fff;color:var(--ink);border-radius:26px;padding:30px;box-shadow:0 30px 60px rgba(0,0,0,.35);position:relative}
+.hero-card h3{font-size:1.25rem;margin-bottom:4px}
+.hero-card p{color:var(--muted);font-size:.9rem;margin-bottom:18px}
+.price-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-top:1px dashed var(--line)}
+.price-row strong{display:block;font-size:.98rem;color:var(--navy)}
+.price-row small{color:var(--muted);font-size:.8rem}
+.price-row .p{font-weight:800;font-size:1.25rem;color:var(--navy);text-align:right}
+.price-row .p small{display:block;font-weight:600;color:var(--muted)}
+.hero-card .tag{position:absolute;top:-16px;right:22px;background:var(--yellow);color:var(--navy-dark);font-weight:800;font-size:.78rem;padding:7px 16px;border-radius:99px;letter-spacing:.04em}
+
+/* Trust strip */
+.trust{margin-top:-60px;position:relative;z-index:5;padding:0}
+.trust .grid{background:#fff;border-radius:22px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+.trust .item{padding:26px 24px;display:flex;gap:14px;align-items:flex-start;border-right:1px solid var(--line)}
+.trust .item:last-child{border:0}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--navy);color:var(--yellow);display:grid;place-items:center;flex:none}
+.ico svg{width:24px;height:24px}
+.trust h4{font-size:.98rem;color:var(--navy);line-height:1.25}
+.trust p{font-size:.84rem;color:var(--muted);line-height:1.4;margin-top:3px}
+
+/* Services */
+.services{background:var(--bg)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);border:1px solid transparent;transition:.25s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);border-color:var(--yellow)}
+.card::before{content:"";position:absolute;left:0;top:0;height:5px;width:100%;background:linear-gradient(90deg,var(--yellow),var(--navy))}
+.card .ico{margin-bottom:18px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+.card ul{list-style:none;display:grid;gap:8px;font-size:.92rem}
+.card li{display:flex;gap:10px;align-items:flex-start}
+.card li svg{width:18px;height:18px;color:var(--yellow);flex:none;margin-top:3px}
+.more{margin-top:26px;background:var(--navy);color:#fff;border-radius:var(--radius);padding:26px 30px;display:flex;gap:20px 40px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.more h3{color:#fff;font-size:1.15rem}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:8px 16px;border-radius:99px;font-size:.88rem;font-weight:500}
+
+/* Combos */
+.combos{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:900px;margin-inline:auto}
+.combo{border:2px solid var(--line);border-radius:22px;padding:34px 30px;position:relative;background:#fff;transition:.25s}
+.combo:hover{border-color:var(--yellow);box-shadow:var(--shadow)}
+.combo.star{border-color:var(--navy);background:linear-gradient(180deg,#fff,#F3F7FF)}
+.combo .badge{position:absolute;top:-14px;left:28px;background:var(--yellow);color:var(--navy-dark);font-weight:800;font-size:.78rem;padding:6px 16px;border-radius:99px;letter-spacing:.06em}
+.combo h3{font-size:1.35rem;margin:6px 0 4px}
+.combo p{color:var(--muted);font-size:.92rem;margin-bottom:18px}
+.combo .price{font-size:2.5rem;font-weight:800;color:var(--navy);line-height:1}
+.combo .price small{font-size:.9rem;font-weight:600;color:var(--muted);margin-right:6px}
+.combo ul{list-style:none;margin:20px 0 24px;display:grid;gap:8px;font-size:.92rem}
+.combo li{display:flex;gap:10px}
+.combo li svg{width:18px;height:18px;color:var(--yellow);flex:none;margin-top:4px}
+.combo .btn{width:100%;justify-content:center}
+.addon{max-width:900px;margin:26px auto 0;background:var(--yellow);border-radius:99px;padding:16px 30px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-weight:700;color:var(--navy-dark)}
+.addon span:last-child{font-size:1.2rem}
+.note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:18px}
+
+/* Furniture */
+.furniture{background:var(--navy);color:#fff}
+.furniture h2{color:#fff}
+.furniture .lead{color:#cfd9ec}
+.furniture .eyebrow{background:rgba(255,176,0,.18);color:var(--yellow)}
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.f-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 30px}
+.f-list div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:16px 18px;display:flex;gap:12px;align-items:center;font-weight:500;font-size:.94rem}
+.f-list svg{width:24px;height:24px;color:var(--yellow);flex:none}
+.brands{background:#fff;border-radius:24px;padding:34px;color:var(--ink)}
+.brands h3{font-size:1.1rem;margin-bottom:6px}
+.brands p{color:var(--muted);font-size:.9rem;margin-bottom:22px}
+.brand-pills{display:grid;gap:12px}
+.pill{display:flex;align-items:center;justify-content:space-between;border:2px solid var(--line);border-radius:14px;padding:16px 20px;font-weight:800;font-size:1.15rem;color:var(--navy)}
+.pill small{font-weight:500;font-size:.8rem;color:var(--muted)}
+.also{margin-top:20px;padding-top:18px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted)}
+.also b{color:var(--navy)}
+.script-line{font-family:'Caveat',cursive;font-size:1.7rem;color:var(--navy);margin-top:16px;text-align:center}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding:28px 24px;background:var(--bg);border-radius:var(--radius);counter-increment:s}
+.step::before{content:counter(s);position:absolute;top:-18px;left:24px;width:40px;height:40px;border-radius:50%;background:var(--yellow);color:var(--navy-dark);font-weight:800;display:grid;place-items:center;box-shadow:0 6px 14px rgba(255,176,0,.4)}
+.step h3{font-size:1.05rem;margin:8px 0 6px}
+.step p{font-size:.9rem;color:var(--muted)}
+
+/* Why */
+.why{background:var(--bg)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.promises{display:grid;gap:16px}
+.promise{background:#fff;border-radius:16px;padding:22px 24px;display:flex;gap:18px;box-shadow:var(--shadow)}
+.promise h3{font-size:1.05rem;margin-bottom:2px}
+.promise p{font-size:.9rem;color:var(--muted)}
+.big-quote{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;border-radius:26px;padding:44px 38px;position:relative;overflow:hidden}
+.big-quote::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,176,0,.2)}
+.big-quote .script{font-family:'Caveat',cursive;font-size:2.6rem;line-height:1.1;color:var(--yellow);margin-bottom:14px}
+.big-quote p{color:#d7e0f1;position:relative;z-index:1}
+.big-quote .btn{margin-top:24px;position:relative;z-index:1}
+
+/* FAQ */
+.faq{max-width:820px;margin-inline:auto}
+details{border:1px solid var(--line);border-radius:14px;padding:0 22px;margin-bottom:12px;background:#fff;transition:.2s}
+details[open]{border-color:var(--navy);box-shadow:var(--shadow)}
+summary{cursor:pointer;font-weight:600;color:var(--navy);padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;color:var(--yellow);font-weight:700;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 0 18px;color:var(--muted);font-size:.95rem}
+
+/* Contact */
+.contact{background:linear-gradient(135deg,var(--navy-dark),var(--navy));color:#fff}
+.contact h2{color:#fff}
+.contact .lead{color:#cfd9ec}
+.contact .eyebrow{background:rgba(255,176,0,.18);color:var(--yellow)}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.c-info{display:grid;gap:16px;margin:28px 0}
+.c-row{display:flex;gap:16px;align-items:center}
+.c-row .ico{background:rgba(255,255,255,.1);width:46px;height:46px}
+.c-row small{display:block;color:#a9b9d6;font-size:.78rem}
+.c-row b{font-size:1.05rem}
+.social-row{display:flex;gap:12px;flex-wrap:wrap}
+.social{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:10px 18px 10px 12px;font-weight:600;font-size:.92rem;transition:.2s}
+.social:hover{background:var(--yellow);color:var(--navy-dark);transform:translateY(-2px)}
+.social svg{width:26px;height:26px}
+form{background:#fff;color:var(--ink);border-radius:24px;padding:34px;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+form h3{font-size:1.3rem;margin-bottom:4px}
+form > p{color:var(--muted);font-size:.9rem;margin-bottom:20px}
+label{display:block;font-weight:600;font-size:.86rem;color:var(--navy);margin-bottom:6px}
+input,select,textarea{width:100%;border:2px solid var(--line);border-radius:12px;padding:12px 14px;font:inherit;font-size:.95rem;margin-bottom:16px;background:#fff;transition:.2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--yellow);box-shadow:0 0 0 4px rgba(255,176,0,.2)}
+textarea{min-height:90px;resize:vertical}
+form .btn{width:100%;justify-content:center}
+.fine{font-size:.78rem;color:var(--muted);text-align:center;margin-top:12px}
+
+/* Footer */
+footer{background:var(--navy-dark);color:#a9b9d6;padding:44px 0 26px;font-size:.9rem}
+.f-top{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer .brand b{color:#fff}
+footer .brand small{color:#a9b9d6}
+footer .socials{display:flex;gap:10px}
+footer .socials a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;transition:.2s}
+footer .socials a:hover{background:var(--yellow);color:var(--navy-dark)}
+footer .socials svg{width:20px;height:20px}
+.f-bot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:20px;font-size:.82rem}
+
+/* Floating WhatsApp */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.5);animation:pulse 2.4s infinite}
+.fab svg{width:34px;height:34px;color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero .container,.f-grid,.why-grid,.c-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .trust .grid{grid-template-columns:1fr 1fr}
+  .trust .item:nth-child(2){border-right:0}
+  .trust .item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .steps{grid-template-columns:1fr 1fr;gap:34px 22px}
+  .menu{display:none}
+}
+@media (max-width:640px){
+  section{padding:64px 0}
+  .combos{grid-template-columns:1fr}
+  .trust .grid{grid-template-columns:1fr}
+  .trust .item{border-right:0;border-bottom:1px solid var(--line)}
+  .steps{grid-template-columns:1fr}
+  .f-list{grid-template-columns:1fr}
+  .addon{border-radius:22px}
+  .topbar .hide-sm{display:none}
+  .nav .btn span{display:none}
+}
+@media (prefers-reduced-motion:reduce){.fab{animation:none}.reveal{transition:none;opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- SVG sprite: iconos reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-thumb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 11v9H4v-9h3zm0 0l4-8c1.5 0 2.5 1 2.2 2.6L12.6 9H19a2 2 0 012 2.3l-1.2 6.6a2 2 0 01-2 1.6H7"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9z"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="12.5" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 20.5h8M12 16.5v4"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.5 6.5a4 4 0 005 5l-9.8 9.8a2 2 0 01-2.8-2.8l9.8-9.8-.2-2.2zM6 4l2 2m-4 0l2-2 3 3-2 2z"/></symbol>
+  <symbol id="i-wardrobe" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M12 3v18M9.5 12v2M14.5 12v2"/></symbol>
+  <symbol id="i-curtain" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h18M5 4v16c3 0 4-5 4-8s-1-8-4-8zm14 0v16c-3 0-4-5-4-8s1-8 4-8z"/></symbol>
+  <symbol id="i-lamp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v3M4 15a8 8 0 0116 0H4zm8 0v4m-3 2h6"/></symbol>
+  <symbol id="i-frame" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6.5 17l4-5 3 3.5 2-2.5 2.5 4"/><circle cx="9" cy="9" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-mirror" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9.5 8.5c.6-1 1.4-1.6 2.5-2"/></symbol>
+  <symbol id="i-deco" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l2.2 5.3 5.8.5-4.4 3.8 1.3 5.6L12 15l-4.9 3.2 1.3-5.6L4 8.8l5.8-.5L12 3z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 21c.8-4 4-6 8-6s7.200 2 8 6"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 00-8.5 15l-1.4 5 5.2-1.4A9.9 9.9 0 1012.04 2zm0 1.8a8.1 8.1 0 11-4.3 15l-.4-.2-3 .8.8-2.9-.3-.4A8.1 8.1 0 0112.04 3.800zm-3 3.700c-.2 0-.5.100-.7.400-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 2.400 1 2.900.8 3.400.7.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.300.2-1.400-.1-.1-.3-.2-.6-.4l-1.900-.9c-.3-.1-.5-.1-.7.100l-.9 1.100c-.2.200-.3.200-.6.100a6.800 6.800 0 01-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.4 0-.5l-.9-2.100c-.2-.5-.5-.5-.7-.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.500" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.200" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.400" cy="6.600" r="1.200" fill="currentColor"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.600 2h-3.100v13.200a2.900 2.900 0 11-2.900-2.900c.3 0 .6 0 .9.100V9.300a6 6 0 105.100 5.900V8.800a7.600 7.600 0 004.400 1.400V7.100a4.500 4.500 0 01-4.400-5.100z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.500 21v-8h2.700l.4-3.200h-3.100V7.800c0-.9.300-1.500 1.600-1.500h1.700V3.400c-.3 0-1.300-.1-2.400-.1-2.400 0-4 1.500-4 4.100v2.400H7.600V13h2.800v8h3.100z"/></symbol>
+</svg>
+
+<!-- Barra superior -->
+<div class="topbar">
+  <div class="container">
+    <span class="hide-sm">Servicios para tu hogar · Instalamos, armamos y transformamos tu espacio</span>
+    <div class="socials">
+      <span>Síguenos:</span>
+      <a href="https://www.instagram.com/homeservice_sas" target="_blank" rel="noopener">Instagram</a>&nbsp;·&nbsp;
+      <a href="https://www.tiktok.com/@homeservice_sas" target="_blank" rel="noopener">TikTok</a>&nbsp;·&nbsp;
+      <a href="https://wa.me/573227011406" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container nav">
+    <a href="#inicio" class="brand" aria-label="Home Service — inicio">
+      <!-- Logo aproximado en SVG. Reemplazar por <img src="logo.png"> con el archivo original si se desea fidelidad exacta -->
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <g fill="#062F66">
+          <path d="M26 86 L92 36 Q100 30 108 36 L168 80 Q178 88 170 98 Q164 104 154 98 L100 58 L48 98 Q40 104 32 98 Q22 92 26 86z"/>
+          <rect x="136" y="34" width="16" height="44" rx="3"/>
+          <rect x="52" y="100" width="22" height="80" rx="5"/>
+          <rect x="128" y="100" width="22" height="80" rx="5"/>
+          <path d="M74 138 Q104 122 128 122 L150 126 Q120 146 74 154z"/>
+        </g>
+        <g fill="#FFB000">
+          <rect x="84" y="68" width="13" height="13" rx="3"/><rect x="100" y="68" width="13" height="13" rx="3"/>
+          <rect x="84" y="84" width="13" height="13" rx="3"/><rect x="100" y="84" width="13" height="13" rx="3"/>
+          <path d="M50 176 C58 150 96 144 128 138 C150 134 164 124 170 108 C170 132 150 146 122 152 C92 158 66 160 50 176z"/>
+          <path d="M176 78 Q179 90 188 93 Q179 96 176 108 Q173 96 164 93 Q173 90 176 78z"/>
+        </g>
+      </svg>
+      <div><b>Home<i>Service</i></b><small>SERVICIOS PARA TU HOGAR</small></div>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#combos">Combos</a>
+      <a href="#muebles">Armado de muebles</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener">
+      <svg><use href="#i-wa"/></svg><span>Cotiza por WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Instalación · Armado · Decoración</span>
+      <span class="script">Tu hogar, en buenas manos</span>
+      <h1>Instalamos tu TV y armamos tus muebles <em>sin complicaciones</em></h1>
+      <p class="lead">Técnicos responsables, trabajo limpio y acabados de calidad. Tú eliges, nosotros lo dejamos listo y a tiempo.</p>
+      <div class="cta">
+        <a class="btn btn-yellow" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>¡Cotiza ya!</a>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+      </div>
+      <div class="checks">
+        <span><svg><use href="#i-check"/></svg>Trabajo seguro y responsable</span>
+        <span><svg><use href="#i-check"/></svg>Cumplimiento en los tiempos</span>
+        <span><svg><use href="#i-check"/></svg>Calidad en cada detalle</span>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Precios de instalación de televisores">
+      <span class="tag">DESDE</span>
+      <h3>Instalación de televisores</h3>
+      <p>Soporte seguro, cableado limpio y asesoría personalizada.</p>
+      <div class="price-row"><div><strong>Combo 1</strong><small>Televisor + base fija</small></div><div class="p"><small>desde</small>$120.000</div></div>
+      <div class="price-row"><div><strong>Combo 2</strong><small>Televisor + base móvil</small></div><div class="p"><small>desde</small>$150.000</div></div>
+      <div class="price-row"><div><strong>Ocultamiento de cables</strong><small>Adicional</small></div><div class="p">+ $30.000</div></div>
+    </aside>
+  </div>
+</section>
+
+<!-- Franja de confianza -->
+<section class="trust" aria-label="Por qué confiar en Home Service">
+  <div class="container">
+    <div class="grid">
+      <div class="item"><div class="ico"><svg><use href="#i-shield"/></svg></div><div><h4>Trabajo seguro y responsable</h4><p>Fijaciones y herrajes correctos para cada pared y cada mueble.</p></div></div>
+      <div class="item"><div class="ico"><svg><use href="#i-clock"/></svg></div><div><h4>Cumplimiento en los tiempos</h4><p>Llegamos a la hora acordada y entregamos cuando dijimos.</p></div></div>
+      <div class="item"><div class="ico"><svg><use href="#i-thumb"/></svg></div><div><h4>Calidad en cada detalle</h4><p>Acabados limpios, nivelados y probados antes de irnos.</p></div></div>
+      <div class="item"><div class="ico"><svg><use href="#i-home"/></svg></div><div><h4>Tu hogar, nuestro compromiso</h4><p>Cuidamos tu espacio como si fuera el nuestro.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Nuestros servicios</span>
+      <h2>Todo lo que tu hogar necesita, en un solo lugar</h2>
+      <p class="lead">Dos especialidades principales y un equipo listo para ayudarte con los detalles que transforman tu casa.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ico"><svg><use href="#i-tv"/></svg></div>
+        <h3>Instalación de televisores</h3>
+        <p>Disfruta tu contenido con la mejor instalación y sin complicaciones.</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Soporte seguro</li>
+          <li><svg><use href="#i-check"/></svg>Cableado limpio</li>
+          <li><svg><use href="#i-check"/></svg>Instalación en pared</li>
+          <li><svg><use href="#i-check"/></svg>Asesoría personalizada</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg><use href="#i-tools"/></svg></div>
+        <h3>Armado de muebles</h3>
+        <p>Servicio profesional y confiable para que disfrutes tus muebles sin complicaciones.</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Muebles de todas las marcas</li>
+          <li><svg><use href="#i-check"/></svg>Closets, cajoneras, repisas y escritorios</li>
+          <li><svg><use href="#i-check"/></svg>Muebles de cocina y baño</li>
+          <li><svg><use href="#i-check"/></svg>Muebles de sala, comedor y más</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="ico"><svg><use href="#i-deco"/></svg></div>
+        <h3>Instalación y decoración</h3>
+        <p>Los detalles que le dan carácter a tu hogar, instalados con precisión.</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Cortinas (por metro lineal)</li>
+          <li><svg><use href="#i-check"/></svg>Lámparas y cuadros</li>
+          <li><svg><use href="#i-check"/></svg>Espejos</li>
+          <li><svg><use href="#i-check"/></svg>Decoración en general</li>
+        </ul>
+      </article>
+    </div>
+    <div class="more reveal">
+      <h3>Otros servicios para tu hogar</h3>
+      <div class="chips">
+        <span>Armado de muebles</span><span>Cortinas</span><span>Lámparas</span><span>Cuadros</span><span>Espejos</span><span>Decoración en general</span>
+      </div>
+      <a class="btn btn-yellow" href="#contacto">¡Cotiza ya!</a>
+    </div>
+  </div>
+</section>
+
+<!-- Combos -->
+<section id="combos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Instalación de televisores</span>
+      <h2>Elige tu combo, nosotros nos encargamos</h2>
+      <p class="lead">Precios claros desde el inicio. El valor final se confirma según el tamaño del televisor y el tipo de pared.</p>
+    </div>
+    <div class="combos">
+      <article class="combo reveal">
+        <h3>Combo 1</h3>
+        <p>Instalación de televisor + base fija</p>
+        <div class="price"><small>desde</small>$120.000</div>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Soporte fijo, seguro y nivelado</li>
+          <li><svg><use href="#i-check"/></svg>Instalación en pared</li>
+          <li><svg><use href="#i-check"/></svg>Asesoría personalizada</li>
+        </ul>
+        <a class="btn btn-wa" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20el%20Combo%201%20(televisor%20%2B%20base%20fija)" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Quiero el Combo 1</a>
+      </article>
+      <article class="combo star reveal">
+        <span class="badge">MÁS COMPLETO</span>
+        <h3>Combo 2</h3>
+        <p>Instalación de televisor + base móvil (brazo articulado a la pared)</p>
+        <div class="price"><small>desde</small>$150.000</div>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Brazo articulado para mover la pantalla</li>
+          <li><svg><use href="#i-check"/></svg>Instalación en pared</li>
+          <li><svg><use href="#i-check"/></svg>Asesoría personalizada</li>
+        </ul>
+        <a class="btn btn-wa" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20el%20Combo%202%20(televisor%20%2B%20base%20m%C3%B3vil)" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Quiero el Combo 2</a>
+      </article>
+    </div>
+    <div class="addon reveal"><span>Instalación con ocultamiento de cables</span><span>+ $30.000</span></div>
+    <p class="note">Precios “desde”, en pesos colombianos (COP). Cotización final sin compromiso por WhatsApp.</p>
+  </div>
+</section>
+
+<!-- Muebles -->
+<section class="furniture" id="muebles">
+  <div class="container f-grid">
+    <div class="reveal">
+      <span class="eyebrow">Armado de muebles</span>
+      <h2>Tú lo eliges, nosotros lo armamos</h2>
+      <p class="lead">Armamos tus muebles con herramientas profesionales, cumpliendo los tiempos y cuidando cada acabado.</p>
+      <div class="f-list">
+        <div><svg><use href="#i-tools"/></svg>Muebles de todas las marcas</div>
+        <div><svg><use href="#i-shield"/></svg>Trabajo seguro y responsable</div>
+        <div><svg><use href="#i-clock"/></svg>Cumplimiento en los tiempos</div>
+        <div><svg><use href="#i-thumb"/></svg>Acabados de calidad</div>
+      </div>
+      <a class="btn btn-yellow" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20el%20armado%20de%20un%20mueble" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Cotizar armado de muebles</a>
+    </div>
+    <div class="brands reveal">
+      <h3>Garantizamos el armado de muebles de:</h3>
+      <p>Las tiendas donde más compran nuestros clientes.</p>
+      <div class="brand-pills">
+        <div class="pill">IKEA <small>Centros de entretenimiento, closets y más</small></div>
+        <div class="pill">Tugó <small>Muebles para toda la casa</small></div>
+        <div class="pill">Homecenter <small>Closets modulares RTA y más</small></div>
+      </div>
+      <div class="also"><b>También realizamos:</b> instalación de clósets, cajoneras, repisas y escritorios · muebles de cocina y baño · muebles de sala, comedor y más.</div>
+      <div class="script-line">Tú lo eliges, nosotros lo armamos.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Proceso -->
+<section id="proceso">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Un proceso simple, claro y sin sorpresas</h2>
+      <p class="lead">Desde tu primer mensaje hasta que dejamos todo funcionando.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Escríbenos</h3><p>Cuéntanos qué necesitas por WhatsApp o llamada: servicio, ubicación y, si puedes, una foto o referencia.</p></div>
+      <div class="step reveal"><h3>Recibe tu cotización</h3><p>Te damos un precio claro y confirmamos el alcance del trabajo antes de empezar.</p></div>
+      <div class="step reveal"><h3>Agenda tu visita</h3><p>Elegimos juntos el día y la hora que mejor te quede, y llegamos puntuales.</p></div>
+      <div class="step reveal"><h3>Instalamos y probamos</h3><p>Trabajamos con limpieza, probamos que todo quede firme y funcionando, y dejamos el espacio ordenado.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Por qué -->
+<section class="why">
+  <div class="container why-grid">
+    <div class="reveal">
+      <span class="eyebrow">Por qué Home Service</span>
+      <h2>Confianza que se nota desde el primer día</h2>
+      <p class="lead" style="margin-bottom:26px">Entrar a tu casa es un voto de confianza. Por eso trabajamos con tres compromisos que no se negocian.</p>
+      <div class="promises">
+        <div class="promise"><div class="ico"><svg><use href="#i-shield"/></svg></div><div><h3>Seguridad y responsabilidad</h3><p>Evaluamos cada pared y cada mueble para usar la fijación adecuada. Tu familia y tus equipos, protegidos.</p></div></div>
+        <div class="promise"><div class="ico"><svg><use href="#i-clock"/></svg></div><div><h3>Cumplimiento</h3><p>Tu tiempo vale. Llegamos a la hora pactada y entregamos en el plazo acordado.</p></div></div>
+        <div class="promise"><div class="ico"><svg><use href="#i-thumb"/></svg></div><div><h3>Calidad en cada detalle</h3><p>Niveles, cables ordenados, tornillos firmes y acabados limpios. Si no queda perfecto, no nos vamos.</p></div></div>
+      </div>
+    </div>
+    <div class="big-quote reveal">
+      <div class="script">Tu hogar, en buenas manos</div>
+      <p>Instalamos, armamos y transformamos tu hogar. Cuéntanos qué necesitas y te respondemos por WhatsApp con una cotización clara.</p>
+      <a class="btn btn-yellow" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Hablar con Camilo</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="preguntas">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Resolvemos tus dudas antes de empezar</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>¿Cuánto cuesta instalar un televisor?</summary><p>El Combo 1 (televisor + base fija) parte desde $120.000 y el Combo 2 (televisor + base móvil con brazo articulado) desde $150.000. El ocultamiento de cables tiene un adicional de $30.000. El valor final se confirma según el tamaño del TV y el tipo de pared.</p></details>
+      <details><summary>¿Arman muebles de cualquier tienda o marca?</summary><p>Sí. Armamos muebles de todas las marcas, incluyendo IKEA, Tugó y Homecenter: closets, cajoneras, repisas, escritorios, muebles de cocina, baño, sala y comedor.</p></details>
+      <details><summary>¿Qué necesito tener listo el día del servicio?</summary><p>El televisor o los muebles en el sitio, y un espacio libre para trabajar. Si ya tienes la base o soporte, mejor; si no, te asesoramos sobre cuál elegir.</p></details>
+      <details><summary>¿Puedo cotizar enviando fotos?</summary><p>Claro. Escríbenos por WhatsApp con una foto del espacio o del mueble y la referencia; así te damos un precio más exacto desde el primer mensaje.</p></details>
+      <details><summary>¿También instalan cortinas, lámparas, cuadros y espejos?</summary><p>Sí. Las cortinas se cotizan por metro lineal, y también instalamos lámparas, cuadros, espejos y hacemos decoración en general.</p></details>
+      <details><summary>¿Cómo agendo mi servicio?</summary><p>Escríbenos o llámanos al 322 701 1406 (WhatsApp y teléfono) y coordinamos el día y la hora que mejor te quede.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section class="contact" id="contacto">
+  <div class="container c-grid">
+    <div class="reveal">
+      <span class="eyebrow">Contacto</span>
+      <h2>Cuéntanos qué necesitas y cotizamos hoy</h2>
+      <p class="lead">Respondemos por WhatsApp. Sin compromiso y con precios claros.</p>
+      <div class="c-info">
+        <div class="c-row"><div class="ico"><svg><use href="#i-user"/></svg></div><div><small>Asesor</small><b>Camilo Zárate</b></div></div>
+        <div class="c-row"><div class="ico"><svg><use href="#i-phone"/></svg></div><div><small>WhatsApp y teléfono</small><b><a href="tel:+573227011406">322 701 1406</a></b></div></div>
+        <div class="c-row"><div class="ico"><svg><use href="#i-pin"/></svg></div><div><small>Cobertura</small><b>Bogotá y alrededores</b></div></div>
+      </div>
+      <div class="social-row">
+        <a class="social" href="https://wa.me/573227011406" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+        <a class="social" href="https://www.instagram.com/homeservice_sas" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@homeservice_sas</a>
+        <a class="social" href="https://www.tiktok.com/@homeservice_sas" target="_blank" rel="noopener"><svg><use href="#i-tt"/></svg>@homeservice_sas</a>
+        <!-- Facebook: descomentar y poner el enlace real cuando exista
+        <a class="social" href="https://www.facebook.com/TU_PAGINA" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>Home Service</a> -->
+      </div>
+    </div>
+
+    <form id="quote" class="reveal" novalidate>
+      <h3>Solicita tu cotización</h3>
+      <p>Completa los datos y se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+      <label for="nombre">Tu nombre</label>
+      <input id="nombre" name="nombre" type="text" placeholder="Ej. María Rodríguez" autocomplete="name" required>
+      <label for="servicio">¿Qué servicio necesitas?</label>
+      <select id="servicio" name="servicio" required>
+        <option value="Instalación de televisor + base fija (Combo 1)">Instalación de televisor + base fija (Combo 1)</option>
+        <option value="Instalación de televisor + base móvil (Combo 2)">Instalación de televisor + base móvil (Combo 2)</option>
+        <option value="Armado de muebles">Armado de muebles</option>
+        <option value="Instalación de cortinas">Instalación de cortinas</option>
+        <option value="Lámparas, cuadros o espejos">Lámparas, cuadros o espejos</option>
+        <option value="Decoración en general">Decoración en general</option>
+        <option value="Otro servicio">Otro servicio</option>
+      </select>
+      <label for="zona">Barrio o ciudad</label>
+      <input id="zona" name="zona" type="text" placeholder="Ej. Chapinero, Bogotá" autocomplete="address-level2">
+      <label for="detalle">Cuéntanos más (opcional)</label>
+      <textarea id="detalle" name="detalle" placeholder="Ej. TV de 55 pulgadas, pared de drywall, quiero ocultar los cables"></textarea>
+      <button class="btn btn-wa" type="submit"><svg><use href="#i-wa"/></svg>Enviar por WhatsApp</button>
+      <p class="fine">Tus datos solo se usan para responder tu solicitud.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="f-top">
+      <div class="brand">
+        <svg viewBox="0 0 200 200" aria-hidden="true" style="width:46px;height:46px">
+          <g fill="#fff"><path d="M26 86 L92 36 Q100 30 108 36 L168 80 Q178 88 170 98 Q164 104 154 98 L100 58 L48 98 Q40 104 32 98 Q22 92 26 86z"/><rect x="136" y="34" width="16" height="44" rx="3"/><rect x="52" y="100" width="22" height="80" rx="5"/><rect x="128" y="100" width="22" height="80" rx="5"/><path d="M74 138 Q104 122 128 122 L150 126 Q120 146 74 154z"/></g>
+          <g fill="#FFB000"><rect x="84" y="68" width="13" height="13" rx="3"/><rect x="100" y="68" width="13" height="13" rx="3"/><rect x="84" y="84" width="13" height="13" rx="3"/><rect x="100" y="84" width="13" height="13" rx="3"/><path d="M50 176 C58 150 96 144 128 138 C150 134 164 124 170 108 C170 132 150 146 122 152 C92 158 66 160 50 176z"/><path d="M176 78 Q179 90 188 93 Q179 96 176 108 Q173 96 164 93 Q173 90 176 78z"/></g>
+        </svg>
+        <div><b>Home<i style="font-style:normal;color:#FFB000">Service</i></b><small>SERVICIOS PARA TU HOGAR</small></div>
+      </div>
+      <div class="socials">
+        <a href="https://wa.me/573227011406" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+        <a href="https://www.instagram.com/homeservice_sas" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        <a href="https://www.tiktok.com/@homeservice_sas" target="_blank" rel="noopener" aria-label="TikTok"><svg><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© <span id="yr">2026</span> Home Service SAS. Todos los derechos reservados.</span>
+      <span>Instalamos, armamos y transformamos tu hogar.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/573227011406?text=Hola%20Home%20Service%2C%20quiero%20cotizar%20un%20servicio" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<script>
+// Año dinámico
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Animación de aparición al hacer scroll
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+// Formulario -> mensaje de WhatsApp
+document.getElementById('quote').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  var f = ev.target;
+  var nombre = f.nombre.value.trim();
+  if(!nombre){ f.nombre.focus(); f.nombre.style.borderColor='#d33'; return; }
+  var msg = 'Hola Home Service, soy ' + nombre + '.\n' +
+            'Quiero cotizar: ' + f.servicio.value + '.' +
+            (f.zona.value.trim() ? '\nUbicación: ' + f.zona.value.trim() + '.' : '') +
+            (f.detalle.value.trim() ? '\nDetalles: ' + f.detalle.value.trim() : '');
+  window.open('https://wa.me/573227011406?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
